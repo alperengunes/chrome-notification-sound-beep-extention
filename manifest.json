@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Web Sound Notification",
+  "version": "1.0",
+  "description": "Plays a beep sound when WhatsApp Web is opened",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
